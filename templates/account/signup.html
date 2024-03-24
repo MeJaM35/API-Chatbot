@@ -6,5 +6,8 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Sign up</button>
+      <p>Or</p>
+  <a href="{% provider_login_url 'google' %}">Sign in with Google</a>
+
   </form>
 {% endblock %}
