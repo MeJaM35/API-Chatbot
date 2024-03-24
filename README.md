@@ -39,6 +39,6 @@ Follow these steps to get the project up and running on your local machine:
    ```
 Now, you should be able to see the application running at `127.0.0.1:8000` in your web browser. Enjoy coding!
 
-If you have any questions, feel free to reach out to me at '''jamsutkarmeetpradeep@gmail.com'''.
+If you have any questions, feel free to reach out to me at `jamsutkarmeetpradeep@gmail.com`.
 
 
