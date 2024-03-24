@@ -1,15 +1,12 @@
 
 
-# Django Cookiecutter Template
+# API Based ChatBot
 
 This repository contains a Django Cookiecutter template that you can use to kickstart your Django projects.
 
 ## Features
 
-- Pre-configured settings for quick setup.
-- Pre-installed Django apps for common functionalities.
-- Pre-configured database settings.
-- Pre-configured static files settings.
+tbd
 
 ## Getting Started
 
@@ -17,7 +14,7 @@ Follow these steps to get the project up and running on your local machine:
 
 1. **Clone the GitHub repository**
    ```bash
-   git clone https://github.com/yourusername/Django-CookieCutter.git
+   git clone https://github.com/yourusername/API-ChatBot.git
    ```
 2. **Create a Python virtual environment**
    ```bash
@@ -41,17 +38,6 @@ Follow these steps to get the project up and running on your local machine:
    python manage.py runserver
    ```
 Now, you should be able to see the application running at `127.0.0.1:8000` in your web browser. Enjoy coding!
-
-## Customizing the Template
-
-You can customize this template to suit your needs. For example, you can add or remove Django apps, change the database settings, or modify the static files settings.
-
-## Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before getting started.
-
-
-## Contact
 
 If you have any questions, feel free to reach out to me at '''jamsutkarmeetpradeep@gmail.com'''.
 
