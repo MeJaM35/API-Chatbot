@@ -5,14 +5,34 @@ from openai import OpenAI
 
 client = OpenAI(
     # Defaults to os.environ.get("OPENAI_API_KEY")
-    api_key='your key here'
 )
+
+
+def get_completion(prompt):
+    query = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+       messages=[ 
+           {"role": "system", "content": "You are a helpful AI assistant."},
+           {"role": "user", "content": prompt}],
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    response = query.choices
+    return response
 
 
 
 
 
 def index(request):
-    return render(request, 'core.html')
+    context = {}
+    if request.method == "POST":
+        prompt = request.POST.get('prompt')
+        response = get_completion(prompt)
+        context['response'] = response
+    
+    return render(request, 'core.html', context)
 
 # Create your views here.
