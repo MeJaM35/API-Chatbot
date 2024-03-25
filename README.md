@@ -38,9 +38,9 @@ Follow these steps to get the project up and running on your local machine:
    python manage.py runserver
    ```
 
-###Recreate this Project
 
-## How to recreate it simple steps
+
+## Recreate it simple steps
 
 1. **Step 1:** Create a Full Fledged Django project using my cookie cutter django template
    ```bash
