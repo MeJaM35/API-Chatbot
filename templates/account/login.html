@@ -2,15 +2,24 @@
 
 {% block content %}
 
-{% load socialaccount %} //make sure to add this
+{% load socialaccount %}
 
-  <h2>Login</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-      <p>Or</p>
-  <a href="{% provider_login_url 'google' %}">Sign in with Google</a>
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
 
-  </form>
+ <body>
+    <div class="o-container o-container--medium u-center-block">
+        <div class="c-card">
+            <header class="c-card__header">
+                <h2 class="c-heading">Login</h2>
+            </header>
+            <form method="post" class="c-card__body">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="c-button c-button--brand">Login</button>
+                <p class="u-text-center">Or</p>
+                <a href="{% provider_login_url 'google' %}" class="c-button c-button--info u-center-block">Sign in with Google</a>
+            </form>
+        </div>
+    </div>
+</body>
 {% endblock %}
