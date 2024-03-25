@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+
+
+<body>
+    <div class="o-container o-container--medium u-center-block">
+        <div class="c-card">
+            <header class="c-card__header">
+                <h2 class="c-heading">Chatbot</h2>
+            </header>
+            <div class="c-card__body">
+                <div id="chatbox" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <form id="chatform" method="post">
+                    <div class="c-field">
+                        <label class="c-field__label">Enter your message:</label>
+                        <input type="text" class="c-field__input" id="chatinput">
+                    </div>
+                    <button type="submit" class="c-button c-button--brand">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+{% endblock %}
