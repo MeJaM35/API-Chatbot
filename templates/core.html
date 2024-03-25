@@ -13,9 +13,12 @@
             </header>
             <div class="c-card__body">
                 <div id="chatbox" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
-                    <!-- Chat messages will be appended here -->
+                    <!-- Chat messages will be appended here -->   {% now "H:i" %}
+
                 </div>
                 <form id="chatform" method="post">
+                                {% csrf_token %} 
+
                     <div class="c-field">
                         <label class="c-field__label">Enter your message:</label>
                         <input type="text" class="c-field__input" id="chatinput">
