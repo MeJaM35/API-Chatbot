@@ -127,14 +127,16 @@ Now let's get started with Google OAuth integration
    Add `http://127.0.0.1:8000/accounts/google/login/callback/` to authorized URI
 
    Now you get CLIENT ID & CLIENT SECRET save this and add it to social account providers.
-
+   
    Locate `your_project/urls.py` and add 
    ```python
-   path('accounts/', include('allauth.urls')),
-   path('accounts/', include('allauth.socialaccount.urls')),
+     from django.urls import path,include
    ```
-   To `urlpatterns`
-
+   To `urlpatterns` add
+   ```python
+         path('accounts/', include('allauth.urls')),
+         path('accounts/', include('allauth.socialaccount.urls')),
+   ```
    Also add `templates/account` from this project
    I'm too lazy to add all three of these pages :p
 
